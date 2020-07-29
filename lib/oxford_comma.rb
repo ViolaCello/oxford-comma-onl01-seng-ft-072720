@@ -14,7 +14,7 @@ def oxford_comma(array)
       
       new_array.push(change)
     end
-    array = new_array
+    array = new_array.join
   end
 end
 
