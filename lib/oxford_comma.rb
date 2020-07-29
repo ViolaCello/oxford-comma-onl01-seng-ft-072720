@@ -3,7 +3,9 @@ def oxford_comma(array)
   the_last = array.last
   if array.size == 1 
     return array.join 
-  else
+     elsif array.size == 2 
+     new_array = array
+     new_array[0].concat(" and ")
   array.each do |change|
     if change == the_last
       temp = "and "
