@@ -6,6 +6,7 @@ def oxford_comma(array)
      elsif array.size == 2 
      new_array = array
      new_array[0].concat(" and ")
+   else
   array.each do |change|
     if change == the_last
       temp = "and "
@@ -20,7 +21,7 @@ def oxford_comma(array)
  
   end
 end
-end
+
    array = new_array.join
 
 end
