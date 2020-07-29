@@ -5,10 +5,14 @@ def oxford_comma(array)
   else
   array.each do |change|
     if change == array.last 
-      change.concat()
-      new_array.push("and " + change)
+      temp = "and "
+     temp.concat(change)
+     change = temp
+      new_array.push("change")
     else 
-      new_array.push(change + ", ")
+      change.concat(", ")
+      
+      new_array.push(change)
     end
     array = new_array
   end
