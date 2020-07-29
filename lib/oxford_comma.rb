@@ -1,10 +1,11 @@
 def oxford_comma(array)
   new_array = []
+  the_last = array.last
   if array.size == 1 
     return array.join 
   else
   array.each do |change|
-    if change == array.last 
+    if change == the_last
       temp = "and "
      temp.concat(change)
      change = temp
