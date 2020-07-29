@@ -9,7 +9,7 @@ def oxford_comma(array)
       temp = "and "
      temp.concat(change)
      change = temp
-      new_array.push("change")
+      new_array.push(change)
     else 
       change.concat(", ")
       
